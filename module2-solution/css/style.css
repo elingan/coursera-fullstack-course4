@@ -1,0 +1,98 @@
+html {
+  font-family: 'Lucida Sans', sans-serif;  
+  font-size: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Simple reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 175%;
+}
+
+section {
+  position: relative;  
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+section div {
+  position: relative;
+  padding: 50px 20px 20px;   
+  background-color: #969696;
+  border: 1px solid black;
+}
+
+section h2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px 40px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 125%;
+}
+
+#chicken {
+  background-color: #f2c5c5;
+}
+
+#beef {
+  background-color: #ba2727;
+  color: white;
+}
+
+#sushi {
+  background-color: #ffe8af;
+}
+
+/* Simple Responsive Framework. */
+
+.row {
+  width: 100%;
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
