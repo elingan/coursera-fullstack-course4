@@ -63,12 +63,6 @@ section h2 {
   width: 100%;
 }
 
-.row::after {
-  content: '';
-  clear: both;
-  display: table;
-}
-
 [class*='col-'] {
   float: left;
 }
